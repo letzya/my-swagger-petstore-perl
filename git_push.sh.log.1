@@ -7,3 +7,22 @@
 + git init
 Initialized empty Git repository in /Users/yaara/work/my-swagger-git-push/.git/
 + git add .
++ git commit -m 'first checkin'
+[master (root-commit) 84f9001] first checkin
+ 2 files changed, 61 insertions(+)
+ create mode 100644 git_push.sh
+ create mode 100644 git_push.sh.log.1
+++ git remote
++ git_remote=
++ '[' '' = '' ']'
++ '[' '' = '' ']'
++ echo '[INFO] $GIT_TOKEN (environment variable) is not set. Using the git crediential in your environment.'
+[INFO] $GIT_TOKEN (environment variable) is not set. Using the git crediential in your environment.
++ git remote add origin https://github.com/letzya/my-swagger-petstore-perl.git
++ git pull origin master
+fatal: Couldn't find remote ref master
++ echo 'Git pushing to https://github.com/letzya/my-swagger-petstore-perl.git'
+Git pushing to https://github.com/letzya/my-swagger-petstore-perl.git
++ git push origin master
++ grep -v 'To https'
+ * [new branch]      master -> master
